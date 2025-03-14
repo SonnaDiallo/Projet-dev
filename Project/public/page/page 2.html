@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de projet</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logos" >
+            <img  class="logo" src="Image du projet fin d'annee/Freelance_jungle.png" alt="logo">
+            <h1>SkillMatch</h1>
+            <style>
+            .logo {
+                height: 40px; /* Taille du logo */
+                margin: 10px; /* Espacement à droite du logo */
+                padding: auto;
+                height: 120px;
+            }
+            .logos {
+                padding: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            }</style>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="traitement_formulaire.php">Proposer mon freelance </a></li>
+                <li><a href="exercice.php">Mon espace</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="title">
+            <h2>Quel service cherchez vous ?</h2>
+        </div>
+        <div class="text-box">
+        
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Rechercher</button>
+        </div>
+    </section>
+
+    <section class="filters">
+        <div class="filter-container">
+            <select name="Expertise" id="Expertise-filter">
+                <option value="">Expertise</option>
+                <option value="Photographie et Vidéographie">Photographie et Vidéographie</option>
+                    <option value="Consulting en Gestion de Projet">Consulting en Gestion de Projet</option>
+                    <option value="Formation et Coaching">Formation et Coaching</option>
+                    <option value="Support Technique et Informatique">Support Technique et Informatique</option>
+                    <option value="Ressources Humaines et Recrutement">Ressources Humaines et Recrutement</option>
+                    <option value="Développement Web">Développement Web</option>
+                    <option value="Design Graphique">Design Graphique</option>
+                    <option value="Rédaction et Traduction">Rédaction et Traduction</option>
+                    <option value="Développement de Logiciels">Développement de Logiciels</option>
+                    <option value="Autre">Autre</option>
+            </select>
+
+            <select name="location" id="location-filter">
+                <option value="">Localisation</option>
+                <option value="Paris">Paris</option>
+                <option value="Montreuil">Montreuil</option>
+                <option value="Noisy-le-Grand">Noisy-le-Grand</option>
+                <option value="Argenteuil">Argenteuil</option>
+                <option value="Vitry-sur-seine">Vitry-sur-seine</option>
+                <option value="Ile de france">Ile de france</option>
+                <option value="Noisy-le-Grand">Noisy-le-Grand</option>
+            </select>
+
+            <select name="price" id="price-filter">
+                <option value="">Prix</option>
+                <option value="0-50">0 - 50 €</option>
+                <option value="50-100">50 - 100 €</option>
+                <option value="100-200">100 - 200 €</option>
+                <option value="200+">200 € et plus</option>
+            </select>
+
+            <button type="button">Filtrer</button>
+        </div>
+    </section>
+    
+
+    <section class="proposez-un-service">
+        <div class="div-element">
+            <p><strong><h1>Trouver votre Freelance </h1></strong></p>
+            <div class="div-service">
+                <div class="profile" data-Expertise="Développement de Logiciels" data-location="Paris" data-price="50-100">
+                    <img  src="Image du projet fin d'annee/im2.png" alt="Profil 1">
+                    <h3> Dubois Julien</h3>
+                    <p>Developement Logiciels</p>
+                    <p > <a  href="cardre1.html">Prix: 80€</a></p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                <div  class="profile" data-Expertise="Photographie et Vidéographie" data-location="Montreuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im3.jpg" alt="Profil 1">
+                    <h3>Foullure Lea</h3>
+                    <p>Photographe</p>
+                    <p > <a  href="cardre2.html">Prix: 100€</a></p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                <div class="profile" data-Expertise="Photographie et Vidéographie" data-location="Argenteuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im4.jpg" alt="Profil 1">
+                    <h3>Fonten Marie</h3>
+                    <p>Photographe</p>
+                    <p > <a  href="cardre1.html">Prix: 100€</a></p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                <div class="profile" data-Expertise="Développement Web" data-location="Noisy-le-Grand" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im5.png" alt="Profil 1">
+                    <h3>Nom du Freelancer</h3>
+                    <p>Description brève du service</p>
+                    <p > <a  href="cardre2.html">Prix: 100€</a></p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                
+                <div class="profile" data-Expertise="Développement Web" data-location="Vitry-sur-seine" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im7.jpeg" alt="Profil 1">
+                    <h3>Lefave Camille</h3>
+                    <p>Développement Web</p>
+                    <p > <a  href="cardre1.html">Prix: 100€</a></p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                <div class="profile" data-Expertise="Formation et Coaching" data-location="Argenteuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im6.jpg" alt="Profil 1">
+                    <h3>Dupont Sophie</h3>
+                    <p>Coaching</p>
+                    <p>Prix: 98€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+               
+                <div class="profile" data-Expertis=" Consulting en Gestion de Projet" data-location="Montreuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im8.jpeg" alt="Profil 1">
+                    <h3>Matin Lucas</h3>
+                    <p>Marketing</p>
+                    <p>Prix: 57€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                <div class="profile" data-Expertise=" Consulting en Gestion de Projet" data-location="Montreuil" data-price="100">
+                    <img src="Image du projet fin d'annee/im9.jpg" alt="Profil 1">
+                    <h3>Lanber Nicola</h3>
+                    <p>Consultant</p>
+                    <p>Prix: 100€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                
+                <div class="profile" data-Expertise="Photographie et Vidéographie" data-location="Paris" data-price="100-200">
+                    <img src="Image du projet fin d'annee/im15.png" alt="Profil 1">
+                    <h3>Nom du Freelancer</h3>
+                    <p>Redacteur</p>
+                    <p>Prix: 100€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                <div class="profile" data-Expertise=" Support Technique et Informatique" data-location="Argenteuil" data-price="100-200">
+                    <img src="Image du projet fin d'annee/im11.jpg" alt="Profil 1">
+                    <h3>Moro Antoine</h3>
+                    <p>Data</p>
+                    <p>Prix: 100€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                <div class="profile" data-Expertise="Formation et Coaching" data-location="Argenteuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im6.jpg" alt="Profil 1">
+                    <h3>Dupont Sophie</h3>
+                    <p>Coaching</p>
+                    <p>Prix: 98€</p>
+                    <p>Date: 01/01/2023</p>
+                </div><div class="profile" data-Expertise="Formation et Coaching" data-location="Argenteuil" data-price="50-100">
+                    <img src="Image du projet fin d'annee/im12.jpg" alt="Profil 1">
+                    <h3>Dupont Sophie</h3>
+                    <p>Coaching</p>
+                    <p>Prix: 98€</p>
+                    <p>Date: 01/01/2023</p>
+                </div>
+                
+                <!-- Ajoutez d'autres profils comme celui-ci -->
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p><strong>À propos de nous</strong></p>
+                <ul>
+                    <li><a href="#">Offres d'emploi</a></li>
+                    <li><a href="#">Offres de stage</a></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <p><strong>Qui nous sommes</strong></p>
+                <ul>
+                    <li><a href="#">Voir chaque membre</a></li>
+                    <li><a href="#">Contactez chaque membre</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column contact-us">
+                <p><strong>Contactez nous</strong></p>
+                <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Téléphone</a></li>
+                    <li><a href="#">Adresse</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #ff6600;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar nav ul li {
+    display: inline;
+    position: relative;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.navbar nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
+.hero {
+    position: relative;
+    background: url('https://blog.workana.com/wp-content/uploads/2022/02/mejores-plataformas-para-trabajar-como-freelance-workana-blog.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité ici */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    color: beige;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif; /* Style similaire à Welcome to the Jungle */
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons button:hover {
+    background-color: #cc5200;
+}
+
+.main-content {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.featured-profiles {
+    padding: 2rem;
+    background-color: #e4e4e4;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.profile {
+    width: 150px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.profile img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.profile h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-family: 'Georgia', serif; /* Style similaire à Welcome to the Jungle */
+}
+
+.profile p {
+    margin: 0.5rem 0;
+    font-family: 'Arial', sans-serif; /* Style similaire à Welcome to the Jungle */
+}
+
+.profile .price, .profile .date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    border-top: 3px solid #ff6600;
+    padding-top: 1rem;
+}
+
+.footer-column {
+    max-width: 300px;
+    margin: 0 1rem;
+}
+
+.footer-column p {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin: 0.5rem 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff6600;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-column p {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 0.5rem 0;
+}
+
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff6600;
+}
+
+.footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 2rem 1rem;
+}
+
+.footer .footer-column p {
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-size: 1.2em;
+}
+
+.footer .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.footer .footer-column ul li {
+    margin: 0.5rem 0;
+}
+
+.footer .footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-column ul li a:hover {
+    color: #ff6600;
+}
+
+.footer .footer-column {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.logo {
+    height: 40px; /* Taille du logo */
+    margin: 10px; /* Espacement à droite du logo */
+    padding: auto;
+    height: 120px;
+}
+.logos {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}

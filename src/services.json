@@ -1,0 +1,4 @@
+[
+    { "name": "Web Development", "description": "Build modern websites.", "price": 500 },
+    { "name": "Graphic Design", "description": "Create stunning graphics.", "price": 300 }
+]

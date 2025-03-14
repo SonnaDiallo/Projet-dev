@@ -1,0 +1,37 @@
+.bodys2 
+  {
+    font-family: Arial, sans-serif, black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 10;
+    background-color: white;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 500%;
+    max-width: 350px;
+    border: 0px solid #ddd;
+    border-radius: 25px;
+    background-color: #ff6600;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 5); /* Ajustez le nombre de cartes affichÃ©es */
+  }
+
+  .card {
+    min-width: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+    border-right: 0px solid #ddd;
+  }
+  
+  .card:last-child {
+    border-right: none;
+  }
